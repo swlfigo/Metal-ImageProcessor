@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C5BB92A1EBC8B15006C0EE4 /* BrightnessFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BB9291EBC8B15006C0EE4 /* BrightnessFilter.metal */; };
+		2C7BF1E91EC001140020BA95 /* SYLuminanceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF1E81EC001140020BA95 /* SYLuminanceFilter.m */; };
+		2C7BF1EB1EC001250020BA95 /* LuminanceFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF1EA1EC001250020BA95 /* LuminanceFilter.metal */; };
+		2C7BF1EE1EC002AB0020BA95 /* SYExposureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF1ED1EC002AB0020BA95 /* SYExposureFilter.m */; };
+		2C7BF1F01EC004150020BA95 /* ExposureFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF1EF1EC004150020BA95 /* ExposureFilter.metal */; };
+		2C7BF1F31EC004B90020BA95 /* SYContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF1F21EC004B90020BA95 /* SYContrastFilter.m */; };
+		2C7BF1F51EC005520020BA95 /* ConstrastFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF1F41EC005520020BA95 /* ConstrastFilter.metal */; };
+		2C7BF1F81EC005830020BA95 /* SYSaturationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF1F71EC005830020BA95 /* SYSaturationFilter.m */; };
+		2C7BF1FE1EC006360020BA95 /* SaturationFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF1FD1EC006360020BA95 /* SaturationFilter.metal */; };
+		2C7BF2011EC007BA0020BA95 /* SYGammaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2001EC007BA0020BA95 /* SYGammaFilter.m */; };
+		2C7BF2031EC007CC0020BA95 /* GammaFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2021EC007CC0020BA95 /* GammaFilter.metal */; };
+		2C7BF2061EC00AE10020BA95 /* SYHazeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2051EC00AE10020BA95 /* SYHazeFilter.m */; };
+		2C7BF2111EC00DE60020BA95 /* HazeFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2101EC00DE60020BA95 /* HazeFilter.metal */; };
+		2C7BF2141EC011860020BA95 /* SYRGBFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2131EC011860020BA95 /* SYRGBFilter.m */; };
+		2C7BF2161EC0123D0020BA95 /* RGBFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2151EC0123D0020BA95 /* RGBFilter.metal */; };
+		2C7BF2191EC012700020BA95 /* SYColorInvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2181EC012700020BA95 /* SYColorInvert.m */; };
+		2C7BF21B1EC012960020BA95 /* ColorInvert.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF21A1EC012960020BA95 /* ColorInvert.metal */; };
+		2C7BF21E1EC012E20020BA95 /* SYHueFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF21D1EC012E20020BA95 /* SYHueFilter.m */; };
+		2C7BF2201EC013C30020BA95 /* HueFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF21F1EC013C30020BA95 /* HueFilter.metal */; };
+		2C7BF2231EC014560020BA95 /* SYFalseColorFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2221EC014560020BA95 /* SYFalseColorFilter.m */; };
+		2C7BF2251EC014640020BA95 /* FalseColor.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2241EC014640020BA95 /* FalseColor.metal */; };
+		2C7BF2281EC019370020BA95 /* SYHighlightShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF2271EC019370020BA95 /* SYHighlightShadowFilter.m */; };
+		2C7BF22C1EC019EE0020BA95 /* HighlightShadow.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BF22B1EC019EE0020BA95 /* HighlightShadow.metal */; };
+		2CD9353F1EBC677D009F674E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD9353E1EBC677D009F674E /* main.m */; };
+		2CD935421EBC677D009F674E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD935411EBC677D009F674E /* AppDelegate.m */; };
+		2CD935451EBC677D009F674E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD935441EBC677D009F674E /* ViewController.m */; };
+		2CD935481EBC677D009F674E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD935461EBC677D009F674E /* Main.storyboard */; };
+		2CD9354A1EBC677D009F674E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD935491EBC677D009F674E /* Assets.xcassets */; };
+		2CD9354D1EBC677D009F674E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD9354B1EBC677D009F674E /* LaunchScreen.storyboard */; };
+		2CD935801EBC88AE009F674E /* SYImageProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD935721EBC88AE009F674E /* SYImageProducer.m */; };
+		2CD935811EBC88AE009F674E /* SYMetalContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD935741EBC88AE009F674E /* SYMetalContext.m */; };
+		2CD935821EBC88AE009F674E /* SYProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD935761EBC88AE009F674E /* SYProducer.m */; };
+		2CD935831EBC88AE009F674E /* SYProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD935781EBC88AE009F674E /* SYProgram.m */; };
+		2CD935841EBC88AE009F674E /* SYTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD9357A1EBC88AE009F674E /* SYTexture.m */; };
+		2CD935851EBC88AE009F674E /* SYFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD9357D1EBC88AE009F674E /* SYFilter.m */; };
+		2CD935861EBC88AE009F674E /* DefaultShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2CD9357F1EBC88AE009F674E /* DefaultShader.metal */; };
+		2CD935891EBC88F6009F674E /* SYBrightnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD935881EBC88F6009F674E /* SYBrightnessFilter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C5BB9291EBC8B15006C0EE4 /* BrightnessFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BrightnessFilter.metal; sourceTree = "<group>"; };
+		2C7BF1E71EC001140020BA95 /* SYLuminanceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYLuminanceFilter.h; sourceTree = "<group>"; };
+		2C7BF1E81EC001140020BA95 /* SYLuminanceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYLuminanceFilter.m; sourceTree = "<group>"; };
+		2C7BF1EA1EC001250020BA95 /* LuminanceFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = LuminanceFilter.metal; sourceTree = "<group>"; };
+		2C7BF1EC1EC002AB0020BA95 /* SYExposureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYExposureFilter.h; sourceTree = "<group>"; };
+		2C7BF1ED1EC002AB0020BA95 /* SYExposureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYExposureFilter.m; sourceTree = "<group>"; };
+		2C7BF1EF1EC004150020BA95 /* ExposureFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ExposureFilter.metal; sourceTree = "<group>"; };
+		2C7BF1F11EC004B90020BA95 /* SYContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYContrastFilter.h; sourceTree = "<group>"; };
+		2C7BF1F21EC004B90020BA95 /* SYContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYContrastFilter.m; sourceTree = "<group>"; };
+		2C7BF1F41EC005520020BA95 /* ConstrastFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ConstrastFilter.metal; sourceTree = "<group>"; };
+		2C7BF1F61EC005830020BA95 /* SYSaturationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSaturationFilter.h; sourceTree = "<group>"; };
+		2C7BF1F71EC005830020BA95 /* SYSaturationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSaturationFilter.m; sourceTree = "<group>"; };
+		2C7BF1FD1EC006360020BA95 /* SaturationFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = SaturationFilter.metal; sourceTree = "<group>"; };
+		2C7BF1FF1EC007BA0020BA95 /* SYGammaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGammaFilter.h; sourceTree = "<group>"; };
+		2C7BF2001EC007BA0020BA95 /* SYGammaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGammaFilter.m; sourceTree = "<group>"; };
+		2C7BF2021EC007CC0020BA95 /* GammaFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = GammaFilter.metal; sourceTree = "<group>"; };
+		2C7BF2041EC00AE10020BA95 /* SYHazeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHazeFilter.h; sourceTree = "<group>"; };
+		2C7BF2051EC00AE10020BA95 /* SYHazeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHazeFilter.m; sourceTree = "<group>"; };
+		2C7BF2101EC00DE60020BA95 /* HazeFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = HazeFilter.metal; sourceTree = "<group>"; };
+		2C7BF2121EC011860020BA95 /* SYRGBFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYRGBFilter.h; sourceTree = "<group>"; };
+		2C7BF2131EC011860020BA95 /* SYRGBFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYRGBFilter.m; sourceTree = "<group>"; };
+		2C7BF2151EC0123D0020BA95 /* RGBFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = RGBFilter.metal; sourceTree = "<group>"; };
+		2C7BF2171EC012700020BA95 /* SYColorInvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYColorInvert.h; sourceTree = "<group>"; };
+		2C7BF2181EC012700020BA95 /* SYColorInvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYColorInvert.m; sourceTree = "<group>"; };
+		2C7BF21A1EC012960020BA95 /* ColorInvert.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ColorInvert.metal; sourceTree = "<group>"; };
+		2C7BF21C1EC012E20020BA95 /* SYHueFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHueFilter.h; sourceTree = "<group>"; };
+		2C7BF21D1EC012E20020BA95 /* SYHueFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHueFilter.m; sourceTree = "<group>"; };
+		2C7BF21F1EC013C30020BA95 /* HueFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = HueFilter.metal; sourceTree = "<group>"; };
+		2C7BF2211EC014560020BA95 /* SYFalseColorFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYFalseColorFilter.h; sourceTree = "<group>"; };
+		2C7BF2221EC014560020BA95 /* SYFalseColorFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYFalseColorFilter.m; sourceTree = "<group>"; };
+		2C7BF2241EC014640020BA95 /* FalseColor.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = FalseColor.metal; sourceTree = "<group>"; };
+		2C7BF2261EC019370020BA95 /* SYHighlightShadowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHighlightShadowFilter.h; sourceTree = "<group>"; };
+		2C7BF2271EC019370020BA95 /* SYHighlightShadowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHighlightShadowFilter.m; sourceTree = "<group>"; };
+		2C7BF22B1EC019EE0020BA95 /* HighlightShadow.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = HighlightShadow.metal; sourceTree = "<group>"; };
+		2CD9353A1EBC677D009F674E /* MetalImageProcessor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalImageProcessor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD9353E1EBC677D009F674E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CD935401EBC677D009F674E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2CD935411EBC677D009F674E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2CD935431EBC677D009F674E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2CD935441EBC677D009F674E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2CD935471EBC677D009F674E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CD935491EBC677D009F674E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CD9354C1EBC677D009F674E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CD9354E1EBC677D009F674E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD935701EBC88AE009F674E /* SYConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYConsumer.h; sourceTree = "<group>"; };
+		2CD935711EBC88AE009F674E /* SYImageProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImageProducer.h; sourceTree = "<group>"; };
+		2CD935721EBC88AE009F674E /* SYImageProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYImageProducer.m; sourceTree = "<group>"; };
+		2CD935731EBC88AE009F674E /* SYMetalContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYMetalContext.h; sourceTree = "<group>"; };
+		2CD935741EBC88AE009F674E /* SYMetalContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYMetalContext.m; sourceTree = "<group>"; };
+		2CD935751EBC88AE009F674E /* SYProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYProducer.h; sourceTree = "<group>"; };
+		2CD935761EBC88AE009F674E /* SYProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYProducer.m; sourceTree = "<group>"; };
+		2CD935771EBC88AE009F674E /* SYProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYProgram.h; sourceTree = "<group>"; };
+		2CD935781EBC88AE009F674E /* SYProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYProgram.m; sourceTree = "<group>"; };
+		2CD935791EBC88AE009F674E /* SYTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTexture.h; sourceTree = "<group>"; };
+		2CD9357A1EBC88AE009F674E /* SYTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTexture.m; sourceTree = "<group>"; };
+		2CD9357C1EBC88AE009F674E /* SYFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYFilter.h; sourceTree = "<group>"; };
+		2CD9357D1EBC88AE009F674E /* SYFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYFilter.m; sourceTree = "<group>"; };
+		2CD9357F1EBC88AE009F674E /* DefaultShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = DefaultShader.metal; sourceTree = "<group>"; };
+		2CD935871EBC88F6009F674E /* SYBrightnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYBrightnessFilter.h; sourceTree = "<group>"; };
+		2CD935881EBC88F6009F674E /* SYBrightnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBrightnessFilter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CD935371EBC677D009F674E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD935311EBC677D009F674E = {
+			isa = PBXGroup;
+			children = (
+				2CD9353C1EBC677D009F674E /* MetalImageProcessor */,
+				2CD9353B1EBC677D009F674E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CD9353B1EBC677D009F674E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CD9353A1EBC677D009F674E /* MetalImageProcessor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD9353C1EBC677D009F674E /* MetalImageProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				2CD9356E1EBC88AE009F674E /* Processor */,
+				2CD935401EBC677D009F674E /* AppDelegate.h */,
+				2CD935411EBC677D009F674E /* AppDelegate.m */,
+				2CD935431EBC677D009F674E /* ViewController.h */,
+				2CD935441EBC677D009F674E /* ViewController.m */,
+				2CD935461EBC677D009F674E /* Main.storyboard */,
+				2CD935491EBC677D009F674E /* Assets.xcassets */,
+				2CD9354B1EBC677D009F674E /* LaunchScreen.storyboard */,
+				2CD9354E1EBC677D009F674E /* Info.plist */,
+				2CD9353D1EBC677D009F674E /* Supporting Files */,
+			);
+			path = MetalImageProcessor;
+			sourceTree = "<group>";
+		};
+		2CD9353D1EBC677D009F674E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CD9353E1EBC677D009F674E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CD9356E1EBC88AE009F674E /* Processor */ = {
+			isa = PBXGroup;
+			children = (
+				2CD9356F1EBC88AE009F674E /* Base Classes */,
+				2CD9357B1EBC88AE009F674E /* Filters */,
+				2CD9357E1EBC88AE009F674E /* Shader */,
+			);
+			path = Processor;
+			sourceTree = "<group>";
+		};
+		2CD9356F1EBC88AE009F674E /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2CD935701EBC88AE009F674E /* SYConsumer.h */,
+				2CD935711EBC88AE009F674E /* SYImageProducer.h */,
+				2CD935721EBC88AE009F674E /* SYImageProducer.m */,
+				2CD935731EBC88AE009F674E /* SYMetalContext.h */,
+				2CD935741EBC88AE009F674E /* SYMetalContext.m */,
+				2CD935751EBC88AE009F674E /* SYProducer.h */,
+				2CD935761EBC88AE009F674E /* SYProducer.m */,
+				2CD935771EBC88AE009F674E /* SYProgram.h */,
+				2CD935781EBC88AE009F674E /* SYProgram.m */,
+				2CD935791EBC88AE009F674E /* SYTexture.h */,
+				2CD9357A1EBC88AE009F674E /* SYTexture.m */,
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
+		2CD9357B1EBC88AE009F674E /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				2CD9357C1EBC88AE009F674E /* SYFilter.h */,
+				2CD9357D1EBC88AE009F674E /* SYFilter.m */,
+				2CD935871EBC88F6009F674E /* SYBrightnessFilter.h */,
+				2CD935881EBC88F6009F674E /* SYBrightnessFilter.m */,
+				2C7BF1E71EC001140020BA95 /* SYLuminanceFilter.h */,
+				2C7BF1E81EC001140020BA95 /* SYLuminanceFilter.m */,
+				2C7BF1EC1EC002AB0020BA95 /* SYExposureFilter.h */,
+				2C7BF1ED1EC002AB0020BA95 /* SYExposureFilter.m */,
+				2C7BF1F11EC004B90020BA95 /* SYContrastFilter.h */,
+				2C7BF1F21EC004B90020BA95 /* SYContrastFilter.m */,
+				2C7BF1F61EC005830020BA95 /* SYSaturationFilter.h */,
+				2C7BF1F71EC005830020BA95 /* SYSaturationFilter.m */,
+				2C7BF1FF1EC007BA0020BA95 /* SYGammaFilter.h */,
+				2C7BF2001EC007BA0020BA95 /* SYGammaFilter.m */,
+				2C7BF2041EC00AE10020BA95 /* SYHazeFilter.h */,
+				2C7BF2051EC00AE10020BA95 /* SYHazeFilter.m */,
+				2C7BF2121EC011860020BA95 /* SYRGBFilter.h */,
+				2C7BF2131EC011860020BA95 /* SYRGBFilter.m */,
+				2C7BF2171EC012700020BA95 /* SYColorInvert.h */,
+				2C7BF2181EC012700020BA95 /* SYColorInvert.m */,
+				2C7BF21C1EC012E20020BA95 /* SYHueFilter.h */,
+				2C7BF21D1EC012E20020BA95 /* SYHueFilter.m */,
+				2C7BF2211EC014560020BA95 /* SYFalseColorFilter.h */,
+				2C7BF2221EC014560020BA95 /* SYFalseColorFilter.m */,
+				2C7BF2261EC019370020BA95 /* SYHighlightShadowFilter.h */,
+				2C7BF2271EC019370020BA95 /* SYHighlightShadowFilter.m */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		2CD9357E1EBC88AE009F674E /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				2CD9357F1EBC88AE009F674E /* DefaultShader.metal */,
+				2C5BB9291EBC8B15006C0EE4 /* BrightnessFilter.metal */,
+				2C7BF1EA1EC001250020BA95 /* LuminanceFilter.metal */,
+				2C7BF1EF1EC004150020BA95 /* ExposureFilter.metal */,
+				2C7BF1F41EC005520020BA95 /* ConstrastFilter.metal */,
+				2C7BF1FD1EC006360020BA95 /* SaturationFilter.metal */,
+				2C7BF2021EC007CC0020BA95 /* GammaFilter.metal */,
+				2C7BF2101EC00DE60020BA95 /* HazeFilter.metal */,
+				2C7BF2151EC0123D0020BA95 /* RGBFilter.metal */,
+				2C7BF21A1EC012960020BA95 /* ColorInvert.metal */,
+				2C7BF21F1EC013C30020BA95 /* HueFilter.metal */,
+				2C7BF2241EC014640020BA95 /* FalseColor.metal */,
+				2C7BF22B1EC019EE0020BA95 /* HighlightShadow.metal */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CD935391EBC677D009F674E /* MetalImageProcessor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CD935511EBC677D009F674E /* Build configuration list for PBXNativeTarget "MetalImageProcessor" */;
+			buildPhases = (
+				2CD935361EBC677D009F674E /* Sources */,
+				2CD935371EBC677D009F674E /* Frameworks */,
+				2CD935381EBC677D009F674E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalImageProcessor;
+			productName = MetalImageProcessor;
+			productReference = 2CD9353A1EBC677D009F674E /* MetalImageProcessor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CD935321EBC677D009F674E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Sylar;
+				TargetAttributes = {
+					2CD935391EBC677D009F674E = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = G583SJY324;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2CD935351EBC677D009F674E /* Build configuration list for PBXProject "MetalImageProcessor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CD935311EBC677D009F674E;
+			productRefGroup = 2CD9353B1EBC677D009F674E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CD935391EBC677D009F674E /* MetalImageProcessor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CD935381EBC677D009F674E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD9354D1EBC677D009F674E /* LaunchScreen.storyboard in Resources */,
+				2CD9354A1EBC677D009F674E /* Assets.xcassets in Resources */,
+				2CD935481EBC677D009F674E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CD935361EBC677D009F674E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7BF1E91EC001140020BA95 /* SYLuminanceFilter.m in Sources */,
+				2C7BF2161EC0123D0020BA95 /* RGBFilter.metal in Sources */,
+				2CD935451EBC677D009F674E /* ViewController.m in Sources */,
+				2C7BF2281EC019370020BA95 /* SYHighlightShadowFilter.m in Sources */,
+				2C7BF1EE1EC002AB0020BA95 /* SYExposureFilter.m in Sources */,
+				2C7BF1FE1EC006360020BA95 /* SaturationFilter.metal in Sources */,
+				2CD935421EBC677D009F674E /* AppDelegate.m in Sources */,
+				2CD935851EBC88AE009F674E /* SYFilter.m in Sources */,
+				2CD935891EBC88F6009F674E /* SYBrightnessFilter.m in Sources */,
+				2C7BF21E1EC012E20020BA95 /* SYHueFilter.m in Sources */,
+				2C7BF1F01EC004150020BA95 /* ExposureFilter.metal in Sources */,
+				2C7BF1F51EC005520020BA95 /* ConstrastFilter.metal in Sources */,
+				2CD935811EBC88AE009F674E /* SYMetalContext.m in Sources */,
+				2C7BF2011EC007BA0020BA95 /* SYGammaFilter.m in Sources */,
+				2C7BF2191EC012700020BA95 /* SYColorInvert.m in Sources */,
+				2C7BF2231EC014560020BA95 /* SYFalseColorFilter.m in Sources */,
+				2C7BF21B1EC012960020BA95 /* ColorInvert.metal in Sources */,
+				2C7BF1EB1EC001250020BA95 /* LuminanceFilter.metal in Sources */,
+				2C7BF2141EC011860020BA95 /* SYRGBFilter.m in Sources */,
+				2CD935861EBC88AE009F674E /* DefaultShader.metal in Sources */,
+				2C5BB92A1EBC8B15006C0EE4 /* BrightnessFilter.metal in Sources */,
+				2C7BF1F31EC004B90020BA95 /* SYContrastFilter.m in Sources */,
+				2C7BF2111EC00DE60020BA95 /* HazeFilter.metal in Sources */,
+				2CD935841EBC88AE009F674E /* SYTexture.m in Sources */,
+				2C7BF1F81EC005830020BA95 /* SYSaturationFilter.m in Sources */,
+				2CD935831EBC88AE009F674E /* SYProgram.m in Sources */,
+				2CD935821EBC88AE009F674E /* SYProducer.m in Sources */,
+				2CD9353F1EBC677D009F674E /* main.m in Sources */,
+				2C7BF22C1EC019EE0020BA95 /* HighlightShadow.metal in Sources */,
+				2C7BF2251EC014640020BA95 /* FalseColor.metal in Sources */,
+				2CD935801EBC88AE009F674E /* SYImageProducer.m in Sources */,
+				2C7BF2031EC007CC0020BA95 /* GammaFilter.metal in Sources */,
+				2C7BF2201EC013C30020BA95 /* HueFilter.metal in Sources */,
+				2C7BF2061EC00AE10020BA95 /* SYHazeFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CD935461EBC677D009F674E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD935471EBC677D009F674E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CD9354B1EBC677D009F674E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD9354C1EBC677D009F674E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CD9354F1EBC677D009F674E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CD935501EBC677D009F674E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CD935521EBC677D009F674E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G583SJY324;
+				INFOPLIST_FILE = MetalImageProcessor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MetalImageProcessor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CD935531EBC677D009F674E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G583SJY324;
+				INFOPLIST_FILE = MetalImageProcessor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MetalImageProcessor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CD935351EBC677D009F674E /* Build configuration list for PBXProject "MetalImageProcessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD9354F1EBC677D009F674E /* Debug */,
+				2CD935501EBC677D009F674E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CD935511EBC677D009F674E /* Build configuration list for PBXNativeTarget "MetalImageProcessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CD935521EBC677D009F674E /* Debug */,
+				2CD935531EBC677D009F674E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CD935321EBC677D009F674E /* Project object */;
+}
