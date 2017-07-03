@@ -7,7 +7,6 @@
 
 # Metal - Part - 4 Metal 处理图片
 
-[part-1 传送门](http://gitlab.poco.cn/suwl/Metal-HelloWorld)  
 
 
 此Demo利用Metal处理图片
